@@ -1,5 +1,6 @@
 {
   "name": "my-qr-reader",
+  "homepage": "https://leandrogravilha.github.io/leandrogravilha.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "@yudiel/react-qr-scanner": "^2.6.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tailwindcss": "^4.3.2"

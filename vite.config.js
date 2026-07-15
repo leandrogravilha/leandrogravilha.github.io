@@ -7,5 +7,6 @@ export default defineConfig({
   server: {
     host: true,
     allowedHosts: true,
+    base:"/leandrogravilha.github.io/leandrogravilha.github.io/",
   },
 });
